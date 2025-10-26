@@ -1,0 +1,70 @@
+
+# IMPLEMENTATION.md
+
+This document outlines the implementation plan for the "CatchAnything" app.
+
+## Journal
+
+*This section will be updated after each phase to log actions, learnings, surprises, and deviations from the plan.*
+
+## Phase 1: Project Setup and Core Foundation
+
+- [ ] Create a new Flutter package in the current directory.
+- [ ] Remove any boilerplate in the new package that will be replaced.
+- [ ] Update the description of the package in the `pubspec.yaml` and set the version number to 0.1.0.
+- [ ] Update the README.md to include a short placeholder description of the package.
+- [ ] Create the CHANGELOG.md to have the initial version of 0.1.0.
+- [ ] Commit this empty version of the package to the `feat/initial-setup` branch.
+- [ ] After completing a task, if you added any TODOs to the code or didn't fully implement anything, make sure to add new tasks so that you can come back and complete them later.
+
+After this phase, we will:
+
+- [ ] Create/modify unit tests for testing the code added or modified in this phase, if relevant.
+- [ ] Run the `dart_fix` tool to clean up the code.
+- [ ] Run the `analyze_files` tool one more time and fix any issues.
+- [ ] Run any tests to make sure they all pass.
+- [ ] Run `dart_format` to make sure that the formatting is correct.
+- [ ] Re-read the `IMPLEMENTATION.md` file to see what, if anything, has changed in the implementation plan, and if it has changed, take care of anything the changes imply.
+- [ ] Update the `IMPLEMENTATION.md` file with the current state, including any learnings, surprises, or deviations in the Journal section. Check off any checkboxes of items that have been completed.
+- [ ] Use `git diff` to verify the changes that have been made, and create a suitable commit message for any changes.
+- [ ] Wait for approval. Don't commit the changes or move on to the next phase of implementation until the user approves the commit.
+
+## Phase 2: Data Models and Domain Layer
+
+- [ ] Implement the core data models (`User`, `Creature`, `UOGS`) in the `domain` layer.
+- [ ] Implement the business logic for the Universal Object Game System (UOGS), including stat calculations and ability frameworks.
+- [ ] Add unit tests for the domain layer.
+
+After this phase, we will follow the same post-phase steps as in Phase 1.
+
+## Phase 3: Data Layer and AI Integration
+
+- [ ] Implement the `Data` layer, including repositories and data sources.
+- [ ] Integrate with the Gemini 2.5 Flash and Nanobanna APIs for creature generation.
+- [ ] Set up Firebase Firestore and implement the necessary data persistence logic.
+- [ ] Add integration tests for the data layer.
+
+After this phase, we will follow the same post-phase steps as in Phase 1.
+
+## Phase 4: Presentation Layer - Capture and Collection
+
+- [ ] Implement the UI for the capture flow, including taking a picture and displaying the generated creature.
+- [ ] Implement the UI for the creature collection screen.
+- [ ] Use the BLoC pattern for state management.
+- [ ] Add widget tests for the UI components.
+
+After this phase, we will follow the same post-phase steps as in Phase 1.
+
+## Phase 5: Presentation Layer - Battle System
+
+- [ ] Implement the UI for the battle screen.
+- [ ] Implement the real-time PvP and boss battle logic.
+- [ ] Add widget tests for the battle UI.
+
+After this phase, we will follow the same post-phase steps as in Phase 1.
+
+## Phase 6: Finalization
+
+- [ ] Create a comprehensive `README.md` file for the package.
+- [ ] Create a `GEMINI.md` file in the project directory that describes the app, its purpose, and implementation details of the application and the layout of the files.
+- [ ] Ask the user to inspect the app and the code and say if they are satisfied with it, or if any modifications are needed.
