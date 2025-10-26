@@ -1,31 +1,45 @@
-
 # IMPLEMENTATION.md
 
 This document outlines the implementation plan for the "CatchAnything" app.
 
 ## Journal
 
-*This section will be updated after each phase to log actions, learnings, surprises, and deviations from the plan.*
+**Phase 1 (2025-10-25):**
+
+*   **Actions Taken:**
+    *   Created a new Flutter project.
+    *   Removed boilerplate code.
+    *   Updated `pubspec.yaml` with the project description and version.
+    *   Created `README.md` and `CHANGELOG.md`.
+    *   Committed the initial project setup.
+    *   Ran `dart fix`, `dart analyze`, and `dart format`.
+*   **Learnings:**
+    *   The project name must be in `snake_case`.
+    *   The `flutter create` command can be used with `--project-name` to specify a project name that is different from the directory name.
+*   **Surprises:**
+    *   The initial attempt to rename the directory failed because the process was using it.
+*   **Deviations:**
+    *   Instead of renaming the directory, I used the `--project-name` flag with the `flutter create` command.
 
 ## Phase 1: Project Setup and Core Foundation
 
-- [ ] Create a new Flutter package in the current directory.
-- [ ] Remove any boilerplate in the new package that will be replaced.
-- [ ] Update the description of the package in the `pubspec.yaml` and set the version number to 0.1.0.
-- [ ] Update the README.md to include a short placeholder description of the package.
-- [ ] Create the CHANGELOG.md to have the initial version of 0.1.0.
-- [ ] Commit this empty version of the package to the `feat/initial-setup` branch.
-- [ ] After completing a task, if you added any TODOs to the code or didn't fully implement anything, make sure to add new tasks so that you can come back and complete them later.
+- [x] Create a new Flutter package in the current directory.
+- [x] Remove any boilerplate in the new package that will be replaced.
+- [x] Update the description of the package in the `pubspec.yaml` and set the version number to 0.1.0.
+- [x] Update the README.md to include a short placeholder description of the package.
+- [x] Create the CHANGELOG.md to have the initial version of 0.1.0.
+- [x] Commit this empty version of the package to the `feat/initial-setup` branch.
+- [x] After completing a task, if you added any TODOs to the code or didn't fully implement anything, make sure to add new tasks so that you can come back and complete them later.
 
 After this phase, we will:
 
-- [ ] Create/modify unit tests for testing the code added or modified in this phase, if relevant.
-- [ ] Run the `dart_fix` tool to clean up the code.
-- [ ] Run the `analyze_files` tool one more time and fix any issues.
-- [ ] Run any tests to make sure they all pass.
-- [ ] Run `dart_format` to make sure that the formatting is correct.
-- [ ] Re-read the `IMPLEMENTATION.md` file to see what, if anything, has changed in the implementation plan, and if it has changed, take care of anything the changes imply.
-- [ ] Update the `IMPLEMENTATION.md` file with the current state, including any learnings, surprises, or deviations in the Journal section. Check off any checkboxes of items that have been completed.
+- [x] Create/modify unit tests for testing the code added or modified in this phase, if relevant.
+- [x] Run the `dart_fix` tool to clean up the code.
+- [x] Run the `analyze_files` tool one more time and fix any issues.
+- [x] Run any tests to make sure they all pass.
+- [x] Run `dart_format` to make sure that the formatting is correct.
+- [x] Re-read the `IMPLEMENTATION.md` file to see what, if anything, has changed in the implementation plan, and if it has changed, take care of anything the changes imply.
+- [x] Update the `IMPLEMENTATION.md` file with the current state, including any learnings, surprises, or deviations in the Journal section. Check off any checkboxes of items that have been completed.
 - [ ] Use `git diff` to verify the changes that have been made, and create a suitable commit message for any changes.
 - [ ] Wait for approval. Don't commit the changes or move on to the next phase of implementation until the user approves the commit.
 
