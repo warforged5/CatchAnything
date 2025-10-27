@@ -74,9 +74,9 @@ After this phase, we will follow the same post-phase steps as in Phase 1.
 
 ## Phase 5: Presentation Layer - Battle System
 
-- [ ] Implement the UI for the battle screen.
-- [ ] Implement the real-time PvP and boss battle logic.
-- [ ] Add widget tests for the battle UI.
+- [x] Implement the UI for the battle screen.
+- [x] Implement the real-time PvP and boss battle logic.
+- [x] Add widget tests for the battle UI.
 
 After this phase, we will follow the same post-phase steps as in Phase 1.
 
