@@ -45,9 +45,9 @@ After this phase, we will:
 
 ## Phase 2: Data Models and Domain Layer
 
-- [ ] Implement the core data models (`User`, `Creature`, `UOGS`) in the `domain` layer.
-- [ ] Implement the business logic for the Universal Object Game System (UOGS), including stat calculations and ability frameworks.
-- [ ] Add unit tests for the domain layer.
+- [x] Implement the core data models (`User`, `Creature`, `UOGS`) in the `domain` layer.
+- [x] Implement the business logic for the Universal Object Game System (UOGS), including stat calculations and ability frameworks.
+- [x] Add unit tests for the domain layer.
 
 After this phase, we will follow the same post-phase steps as in Phase 1.
 
