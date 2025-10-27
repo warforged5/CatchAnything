@@ -25,18 +25,24 @@ class CollectionScreen extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Creature Collection')),
-      body: ListView.builder(
+      appBar: AppBar(
+        title: const Text('Creature Collection'),
+      ),
+      body: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: 0.8,
+        ),
         itemCount: creatures.length,
         itemBuilder: (context, index) {
           final creature = creatures[index];
-          return ListTile(
-            leading: Image.network(creature.imageUrl),
-            title: Text(creature.name),
-            subtitle: Text(creature.description),
-            onTap: () {
-              // TODO: Implement creature details screen
-            },
+          return Card(
+            child: Column(
+              children: [
+                Image.network(creature.imageUrl),
+                Text(creature.name),
+              ],
+            ),
           );
         },
       ),

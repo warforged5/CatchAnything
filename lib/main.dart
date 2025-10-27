@@ -13,6 +13,36 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: CaptureScreen());
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.green,
+          secondary: Colors.amber,
+        ),
+        scaffoldBackgroundColor: Colors.white,
+        textTheme: const TextTheme(
+          headlineMedium: TextStyle(fontSize: 24, fontFamily: 'Roboto'),
+          bodyMedium: TextStyle(fontSize: 16, fontFamily: 'Roboto'),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.green,
+            foregroundColor: Colors.white,
+          ),
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          border: OutlineInputBorder(),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.green),
+          ),
+        ),
+        cardTheme: const CardThemeData(
+          elevation: 4,
+          shadowColor: Colors.black26,
+        ),
+      ),
+      home: const CaptureScreen(),
+    );
   }
 }
