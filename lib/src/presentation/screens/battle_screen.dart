@@ -1,5 +1,6 @@
 import 'package:catch_anything/src/domain/creature.dart';
 import 'package:catch_anything/src/presentation/bloc/battle_bloc.dart';
+import 'package:catch_anything/src/presentation/widgets/creature_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -56,16 +57,35 @@ class _BattleScreenState extends State<BattleScreen> {
             }
             if (state is BattleInProgress) {
               return Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(
-                    '${state.playerCreature.name} vs ${state.opponentCreature.name}',
+                  CreatureCard(creature: state.opponentCreature),
+                  ElevatedButton(
+                    onPressed: () {
+                      _battleBloc.add(AttackButtonPressed());
+                    },
+                    child: const Text('Attack'),
                   ),
-                  // TODO: Implement battle UI
+                  CreatureCard(creature: state.playerCreature),
                 ],
               );
             }
             if (state is BattleFinished) {
-              return Center(child: Text('${state.winner.name} wins!'));
+              return Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('${state.winner.name} wins!'),
+                    const SizedBox(height: 16),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Text('Back to Collection'),
+                    ),
+                  ],
+                ),
+              );
             }
             return const Center(child: Text('Something went wrong.'));
           },

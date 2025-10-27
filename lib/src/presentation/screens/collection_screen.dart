@@ -25,9 +25,7 @@ class CollectionScreen extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Creature Collection'),
-      ),
+      appBar: AppBar(title: const Text('Creature Collection')),
       body: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -38,10 +36,7 @@ class CollectionScreen extends StatelessWidget {
           final creature = creatures[index];
           return Card(
             child: Column(
-              children: [
-                Image.network(creature.imageUrl),
-                Text(creature.name),
-              ],
+              children: [Image.network(creature.imageUrl), Text(creature.name)],
             ),
           );
         },

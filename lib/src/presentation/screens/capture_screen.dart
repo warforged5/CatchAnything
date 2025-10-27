@@ -82,7 +82,9 @@ class _CaptureScreenState extends State<CaptureScreen> {
                             children: [
                               Text(
                                 state.creature.name,
-                                style: Theme.of(context).textTheme.headlineMedium,
+                                style: Theme.of(
+                                  context,
+                                ).textTheme.headlineMedium,
                               ),
                               const SizedBox(height: 8),
                               Image.network(state.creature.imageUrl),
@@ -90,12 +92,19 @@ class _CaptureScreenState extends State<CaptureScreen> {
                               Text(state.creature.description),
                               const SizedBox(height: 8),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Text('HP: ${state.creature.stats['hp']}'),
-                                  Text('Attack: ${state.creature.stats['attack']}'),
-                                  Text('Defense: ${state.creature.stats['defense']}'),
-                                  Text('Speed: ${state.creature.stats['speed']}'),
+                                  Text(
+                                    'Attack: ${state.creature.stats['attack']}',
+                                  ),
+                                  Text(
+                                    'Defense: ${state.creature.stats['defense']}',
+                                  ),
+                                  Text(
+                                    'Speed: ${state.creature.stats['speed']}',
+                                  ),
                                 ],
                               ),
                             ],

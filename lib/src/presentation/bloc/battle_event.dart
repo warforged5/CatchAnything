@@ -8,3 +8,5 @@ class BattleStarted extends BattleEvent {
 
   BattleStarted(this.playerCreature, this.opponentCreature);
 }
+
+class AttackButtonPressed extends BattleEvent {}
