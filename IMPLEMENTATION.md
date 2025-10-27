@@ -64,10 +64,11 @@ After this phase, we will follow the same post-phase steps as in Phase 1.
 
 ## Phase 4: Presentation Layer - Capture and Collection
 
-- [ ] Implement the UI for the capture flow, including taking a picture and displaying the generated creature.
-- [ ] Implement the UI for the creature collection screen.
-- [ ] Use the BLoC pattern for state management.
-- [ ] Add widget tests for the UI components.
+- [x] Implement the UI for the capture flow, including taking a picture and displaying the generated creature.
+- [x] Implement the UI for the creature collection screen.
+- [x] Use the BLoC pattern for state management.
+- [ ] Handle API key securely.
+- [x] Add widget tests for the UI components.
 
 After this phase, we will follow the same post-phase steps as in Phase 1.
 

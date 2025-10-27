@@ -1,3 +1,4 @@
+import 'package:catch_anything/src/presentation/screens/capture_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -12,11 +13,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('CatchAnything')),
-        body: const Center(child: Text('Hello, World!')),
-      ),
-    );
+    return const MaterialApp(home: CaptureScreen());
   }
 }
