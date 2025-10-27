@@ -53,10 +53,12 @@ After this phase, we will follow the same post-phase steps as in Phase 1.
 
 ## Phase 3: Data Layer and AI Integration
 
-- [ ] Implement the `Data` layer, including repositories and data sources.
-- [ ] Integrate with the Gemini 2.5 Flash and Nanobanna APIs for creature generation.
-- [ ] Set up Firebase Firestore and implement the necessary data persistence logic.
-- [ ] Add integration tests for the data layer.
+- [x] Implement the `Data` layer, including repositories and data sources.
+- [x] Integrate with the Gemini 2.5 Flash and Nanobanna APIs for creature generation.
+- [ ] Parse the Gemini API response to create a `Creature` object.
+- [x] Set up Firebase Firestore and implement the necessary data persistence logic.
+- [ ] Configure Firebase project (replace placeholder files).
+- [x] Add integration tests for the data layer.
 
 After this phase, we will follow the same post-phase steps as in Phase 1.
 

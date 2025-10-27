@@ -1,0 +1,10 @@
+{
+  "project_info": {
+    "project_number": "1234567890",
+    "firebase_url": "https://catch-anything.firebaseio.com",
+    "project_id": "catch-anything",
+    "storage_bucket": "catch-anything.appspot.com"
+  },
+  "client": [],
+  "configuration_version": "1"
+}
